@@ -14,12 +14,25 @@ body {
 	margin: 0;
 	padding: 0;
 }
-@media only screen {
-	body {
-		margin: 2em auto;
-		max-width: 1500px;
-		color: rgb(55, 53, 47);
-	}
+/* For screens larger than 1200px (large desktops) */
+@media (min-width: 1200px) {
+    body {
+        max-width: 1500px;
+    }
+}
+
+/* For screens between 900px and 1200px (tablets, small desktops) */
+@media (max-width: 1200px) {
+    body {
+        max-width: 900px;
+    }
+}
+
+/* For screens smaller than 900px (smartphones, small tablets) */
+@media (max-width: 900px) {
+    body {
+        max-width: 600px; /* Adjust this as needed for smaller devices */
+    }
 }
 
 body {
