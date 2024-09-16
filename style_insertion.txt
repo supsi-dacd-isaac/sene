@@ -1,0 +1,29 @@
+body {
+	margin: 0 auto; /* Center the content */
+	max-width: 1500px; /* Default max-width for larger screens */
+	width: 100%; /* Ensure the content takes full width before max-width applies */
+	color: rgb(55, 53, 47);
+}
+/* For screens larger than 1200px (large desktops) */
+@media (min-width: 1200px) {
+    body {
+        max-width: 1500px;
+        font-size: 14px;
+    }
+}
+
+/* For screens between 900px and 1200px (tablets, small desktops) */
+@media (max-width: 1200px) {
+    body {
+        max-width: 900px;
+        font-size: 22px;
+    }
+}
+
+/* For screens smaller than 900px (smartphones, small tablets) */
+@media (max-width: 900px) {
+    body {
+        max-width: 600px; /* Adjust this as needed for smaller devices */
+	font-size: 22px;
+    }
+}
